@@ -21,6 +21,7 @@ wordpressScaffold () {
 	fi
 	echo "Baixando temas como submódulos"
 	git submodule add git://github.com/retlehs/roots.git ./wp-content/themes/roots
+	git submodule add git@mktvirtual.beanstalkapp.com:/wp-default-theme.git ./wp-content/themes/mktvirtual
 	git submodule add git@github.com:brunomarks/Wordpress-Configurations.git ./Configurations
 	git submodule init
 	git submodule update
