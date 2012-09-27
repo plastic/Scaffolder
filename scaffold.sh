@@ -82,7 +82,7 @@ wordpressScaffold () {
 		sed "s/database_name_here/"$database"/g" wp-config.php > wp-config2.php
 		sed "s/username_here/root/g" wp-config2.php > wp-config.php
 		sed "s/password_here/root/g" wp-config.php > wp-config2.php
-		sed "s/password_here/root/g" wp-config2.php > wp-config.php
+		sed "s/'wp_'/"$name"_/g" wp-config2.php > wp-config.php
 		rm wp-config2.php
 		rm my_project_dump.sql
 		rm nproject.sql
